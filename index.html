@@ -6,150 +6,97 @@
     <title>Dipto Paul's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
+            background-color: #f4f4f4;
             text-align: center;
-            padding: 20px 0;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 30px 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
-
-        header p {
-            margin: 5px 0;
-            font-size: 1.2em;
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
         }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .container:hover {
+            transform: scale(1.05);
         }
-
-        section h2 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
+        h2 {
             color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
-
         ul {
             list-style-type: none;
             padding: 0;
         }
-
-        ul li {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        footer {
-            background-color: #333;
+        li {
+            background: #6a11cb;
             color: white;
-            padding: 10px 0;
-            text-align: center;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
         }
-
-        footer a {
-            color: #fff;
+        li:hover {
+            background-color: #2575fc;
+            cursor: pointer;
+        }
+        .button {
+            background-color: #2575fc;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
             text-decoration: none;
+            font-size: 18px;
+            margin-top: 30px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
         }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #555;
+        .button:hover {
+            background-color: #6a11cb;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dipto Paul</h1>
-        <p>Electrical and Electronic Engineering Student</p>
-    </header>
 
-    <section>
+    <header>Dipto Paul's Portfolio</header>
+
+    <div class="container">
         <h2>About Me</h2>
-        <p>I am an Electrical and Electronic Engineering (EEE) student with a strong passion for technology, programming, and electronics.</p>
-    </section>
+        <p>Hello, I'm Dipto Paul, an Electrical and Electronic Engineering student. I have a passion for technology and electronics.</p>
 
-    <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>BSc in EEE:</strong> Daffodil International University (Batch 231, 3-1 Semester, Ongoing)</li>
-            <li><strong>HSC:</strong> M.E.H. Arif College (2021)</li>
-            <li><strong>SSC:</strong> Kashimpur High School (2019)</li>
+            <li>B.Sc. in EEE - Daffodil International University (Present)</li>
+            <li>HSC - M.E.H Arif College (2021)</li>
+            <li>SSC - Kashimpur High School (2019)</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>C Programming</li>
-            <li>Python</li>
-            <li>MATLAB</li>
-            <li>Microsoft Word</li>
-            <li>Microsoft Excel</li>
-            <li>Microsoft PowerPoint</li>
-            <li>Web Development (HTML, CSS, JavaScript)</li>
-            <li>Problem-Solving</li>
-            <li>Team Collaboration</li>
-            <li>Time Management</li>
-        </ul>
-    </section>
-
-    <section>
         <h2>Projects</h2>
         <ul>
-            <li>Tic Tac Toe Game using Python</li>
-            <li>Fire Siren Alert System</li>
-            <li>Digital Calculator Circuit</li>
+            <li>Tic Tac Toe - Python Game</li>
+            <li>Fire Siren Alert - Digital Circuit</li>
+            <li>Digital Calculator - Electronic Project</li>
+            <li><b>Transformer Performance Analysis</b> – Practical testing of parameters, efficiency, and voltage regulation.</li>
         </ul>
-    </section>
 
-    <section>
-        <h2>Certificates and Achievements</h2>
-        <ul>
-            <li>Library Inspection Certificate</li>
-            <li>Improving Job Skills Certificate</li>
-            <li>Setting And Achieving Focus, Goals And Targets Certificate</li>
-            <li>AI For Beginners Certificate</li>
-            <li>Effective Leadership Certificate</li>
-            <li>Effective Presentations Certificate</li>
-            <li>Improving Communication Skills Certificate</li>
-            <li>Quality Management System (QMS) Certificate</li>
-        </ul>
-    </section>
+        <a href="#contact" class="button">Contact Me</a>
+    </div>
 
-    <section>
-        <h2>Volunteer Experience</h2>
-        <p>I have volunteered with BRAC and UNICEF Bangladesh, contributing to various initiatives and community development projects.</p>
-    </section>
-
-    <section>
-        <h2>Writing</h2>
-        <p>I write articles on WordPress, sharing my thoughts and experiences related to technology and personal growth.</p>
-    </section>
-
-    <footer>
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:pauldipto1@gmail.com">pauldipto1@gmail.com</a></p>
-        <p>Phone: 01303169287</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/diptopaul" target="_blank">Dipto Paul</a></p>
-    </footer>
 </body>
 </html>
