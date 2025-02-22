@@ -14,99 +14,171 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            transition: background-color 0.3s ease;
         }
+
         header {
             background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
-            padding: 30px 0;
+            padding: 60px 0;
             font-size: 36px;
             letter-spacing: 2px;
             text-transform: uppercase;
             border-bottom: 5px solid #2575fc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         header h1 {
             margin: 0;
+            font-size: 40px;
+            font-weight: 700;
         }
+
         header p {
             margin-top: 10px;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 300;
         }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+        }
+
         .container {
-            width: 80%;
+            width: 85%;
             margin: auto;
             background: white;
-            padding: 24px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             margin-top: 40px;
-            border-radius: 15px;
+            border-radius: 20px;
             flex: 1;
+            transition: box-shadow 0.3s ease;
         }
+
+        .container:hover {
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
         h2 {
             color: #333;
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 20px;
             text-transform: uppercase;
+            font-weight: 600;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
+            text-align: left;
         }
+
         li {
             background: #6a11cb;
             color: white;
             margin: 10px 0;
             padding: 15px;
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 18px;
             transition: background-color 0.3s ease;
         }
+
         li:hover {
             background-color: #2575fc;
             cursor: pointer;
         }
+
         .certificates {
             background-color: #fff;
             padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
         }
+
         .contact-info {
             margin-top: 40px;
             background-color: #f9f9f9;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }
+
         .contact-info p {
             font-size: 18px;
             color: #333;
         }
+
         .contact-info a {
             color: #2575fc;
             text-decoration: none;
             font-weight: bold;
         }
+
         footer {
             background-color: #2575fc;
             color: white;
-            padding: 10px 0;
-            font-size: 16px;
+            padding: 15px 0;
+            font-size: 18px;
             width: 100%;
             text-align: center;
             margin-top: auto;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
         }
+
         footer a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 0;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            li {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="https://github.com/diptoeee/diptopaul.github.io/raw/main/images/IMG_20230214_185904_212.jpg" alt="Dipto Paul" class="profile-pic">
         <h1>DIPTO PAUL</h1>
         <p>Electrical and Electronic Engineering Student</p>
         <p>Dipto Paul's Portfolio</p>
@@ -132,7 +204,6 @@
         </ul>
     </div>
 
-    <!-- Certificates Section -->
     <div class="certificates">
         <h2>Certificates</h2>
         <ul>
@@ -148,7 +219,6 @@
         </ul>
     </div>
 
-    <!-- Contact Info Section -->
     <div class="contact-info" id="contact">
         <h2>Contact Information</h2>
         <p>If you want to reach out to me, you can contact me via email or phone:</p>
@@ -156,7 +226,6 @@
         <p>Phone: <a href="tel:+8801303169287">01303169287</a></p>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Dipto Paul. All Rights Reserved. | <a href="https://github.com/diptoeee" target="_blank">GitHub</a></p>
     </footer>
