@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dipto Paul's Portfolio</title>
+    <title>Dipto Paul</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,171 +12,96 @@
             text-align: center;
             display: flex;
             flex-direction: column;
+            align-items: center;
             min-height: 100vh;
         }
         header {
             background: linear-gradient(45deg, #6a11cb, #2575fc);
             color: white;
-            padding: 60px 0;
+            padding: 50px 0;
             font-size: 40px;
-            letter-spacing: 2px;
             text-transform: uppercase;
-            border-bottom: 5px solid #2575fc;
-            animation: fadeIn 2s ease-out;
+            width: 100%;
+            animation: slideDown 1.5s ease-out;
         }
-        header h1 {
-            margin: 0;
-            font-size: 50px;
-        }
-        header p {
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: 300;
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-top: -50px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1.5s ease-out;
         }
         .container {
             width: 80%;
-            margin: 50px auto;
             background: white;
-            padding: 40px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-            margin-top: 40px;
-            border-radius: 15px;
-            animation: slideIn 1.5s ease-out;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease-out;
         }
         h2 {
             color: #333;
-            font-size: 32px;
-            margin-bottom: 20px;
             text-transform: uppercase;
-            animation: fadeInUp 1s ease-out;
         }
         ul {
             list-style-type: none;
             padding: 0;
-            animation: fadeInUp 2s ease-out;
         }
         li {
             background: #6a11cb;
             color: white;
             margin: 10px 0;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 15px;
+            border-radius: 8px;
             font-size: 18px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: 0.3s;
         }
         li:hover {
             background-color: #2575fc;
             transform: scale(1.05);
-            cursor: pointer;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 20px;
-            border: 5px solid #fff;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            animation: zoomIn 1s ease-out;
-        }
-        .certificates {
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 40px;
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .contact-info {
-            margin-top: 40px;
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-        }
-        .contact-info p {
-            font-size: 18px;
-            color: #333;
-        }
-        .contact-info a {
-            color: #2575fc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #2575fc;
-            color: white;
-            padding: 15px 0;
-            font-size: 18px;
-            width: 100%;
-            text-align: center;
-            margin-top: auto;
-            position: relative;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(50px); opacity: 0; }
+        @keyframes slideDown {
+            from { transform: translateY(-100px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes zoomIn {
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
+        footer {
+            background: #2575fc;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>DIPTO PAUL</h1>
         <p>Electrical and Electronic Engineering Student</p>
     </header>
-
+    <img src="https://github.com/diptoeee/diptopaul.github.io/raw/main/images/IMG_20230214_185904_212.jpg" alt="Dipto Paul" class="profile-pic">
     <div class="container">
         <h2>About Me</h2>
         <p>Hello, I'm Dipto Paul, an Electrical and Electronic Engineering student. I have a passion for technology and electronics.</p>
-
-        <!-- Profile Picture -->
-        <img src="https://github.com/diptoeee/diptopaul.github.io/raw/main/images/IMG_20230214_185904_212.jpg" alt="Dipto Paul" class="profile-pic">
-
-        <h2>Education</h2>
-        <ul>
-            <li>B.Sc. in EEE - Daffodil International University (Ongoing)</li>
-            <li>HSC - M.E.H Arif College (2021)</li>
-            <li>SSC - Kashimpur High School (2019)</li>
-        </ul>
-
-        <h2>Projects</h2>
-        <ul>
-            <li>Tic Tac Toe - Python Game</li>
-            <li>Fire Siren Alert - Digital Circuit</li>
-            <li>Digital Calculator - Electronic Project</li>
-            <li><b>Transformer Performance Analysis</b> – Practical testing of parameters, efficiency, and voltage regulation.</li>
-        </ul>
     </div>
-
-    <div class="certificates">
+    <div class="container">
         <h2>Certificates</h2>
         <ul>
             <li>Library Inspection</li>
             <li>Employability Skills Certificate</li>
             <li>Improve Job Skills Certificate</li>
-            <li>Setting and Achieving Focus, Goals and Targets Certificate</li>
+            <li>Setting And Achieving Focus, Goals And Targets Certificate</li>
             <li>AI For Beginners Certificate</li>
             <li>Effective Leadership Certificate</li>
             <li>Effective Presentations Certificate</li>
@@ -185,17 +109,8 @@
             <li>Improve Communication Skills Certificate</li>
         </ul>
     </div>
-
-    <div class="contact-info" id="contact">
-        <h2>Contact Information</h2>
-        <p>If you want to reach out to me, you can contact me via email or phone:</p>
-        <p>Email: <a href="mailto:pauldipto1@gmail.com">pauldipto1@gmail.com</a></p>
-        <p>Phone: <a href="tel:+8801303169287">01303169287</a></p>
-    </div>
-
     <footer>
-        <p>&copy; 2025 Dipto Paul. All Rights Reserved. | <a href="https://github.com/diptoeee" target="_blank">GitHub</a></p>
+        <p>&copy; 2025 Dipto Paul. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
