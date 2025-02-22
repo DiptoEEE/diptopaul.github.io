@@ -20,6 +20,14 @@
             letter-spacing: 2px;
             text-transform: uppercase;
         }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -70,11 +78,44 @@
         .button:hover {
             background-color: #6a11cb;
         }
+        .contact-info {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info p {
+            font-size: 18px;
+            color: #333;
+        }
+        .contact-info a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .certificates {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .certificates h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
 
-    <header>Dipto Paul's Portfolio</header>
+    <header>
+        <h1>DIPTO PAUL</h1>
+        <p>Electrical and Electronic Engineering Student</p>
+        <p>Dipto Paul's Portfolio</p>
+    </header>
 
     <div class="container">
         <h2>About Me</h2>
@@ -96,6 +137,30 @@
         </ul>
 
         <a href="#contact" class="button">Contact Me</a>
+    </div>
+
+    <!-- Certificates Section -->
+    <div class="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Library Inspection Certificate</li>
+            <li>Employability Skills Certificate</li>
+            <li>Improve Job Opportunities Certificate</li>
+            <li>Setting and Achieving Focus, Goals and Targets Certificate</li>
+            <li>AI For Beginners Certificate</li>
+            <li>Effective Leadership Certificate</li>
+            <li>Effective Presentations Certificate</li>
+            <li>Improve Communication Skills Certificate</li>
+            <li>Quality Management System (QMS) Certificate</li>
+        </ul>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info" id="contact">
+        <h2>Contact Information</h2>
+        <p>If you want to reach out to me, you can contact me via email or phone:</p>
+        <p>Email: <a href="mailto:pauldipto1@gmail.com">pauldipto1@gmail.com</a></p>
+        <p>Phone: <a href="tel:+8801303169287">01303169287</a></p>
     </div>
 
 </body>
