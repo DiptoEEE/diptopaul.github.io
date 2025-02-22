@@ -70,6 +70,16 @@
             transform: scale(1.05);
             cursor: pointer;
         }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1s ease-out;
+        }
         .certificates {
             background-color: #fff;
             padding: 20px;
@@ -108,16 +118,6 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-top: 20px;
-            border: 5px solid #fff;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            animation: zoomIn 1s ease-out;
-        }
 
         /* Animations */
         @keyframes fadeIn {
@@ -152,6 +152,9 @@
         <h2>About Me</h2>
         <p>Hello, I'm Dipto Paul, an Electrical and Electronic Engineering student. I have a passion for technology and electronics.</p>
 
+        <!-- Profile Picture -->
+        <img src="https://github.com/diptoeee/diptopaul.github.io/raw/main/images/IMG_20230214_185904_212.jpg" alt="Dipto Paul" class="profile-pic">
+
         <h2>Education</h2>
         <ul>
             <li>B.Sc. in EEE - Daffodil International University (Ongoing)</li>
@@ -166,14 +169,12 @@
             <li>Digital Calculator - Electronic Project</li>
             <li><b>Transformer Performance Analysis</b> – Practical testing of parameters, efficiency, and voltage regulation.</li>
         </ul>
-
-        <img src="https://github.com/diptoeee/diptopaul.github.io/raw/main/images/IMG_20230214_185904_212.jpg" alt="Dipto Paul" class="profile-pic">
     </div>
 
     <div class="certificates">
         <h2>Certificates</h2>
         <ul>
-            <li>Library Inspection Certificate</li>
+            <li>Library Inspection</li>
             <li>Employability Skills Certificate</li>
             <li>Improve Job Skills Certificate</li>
             <li>Setting and Achieving Focus, Goals and Targets Certificate</li>
